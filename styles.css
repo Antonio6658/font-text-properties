@@ -92,6 +92,13 @@ nav a{
 	/* remove the underline */
 	/* make the font's size 1.2rem */
 	/* make the font bolder (600) */
+
+	display: block;
+	color: var(--dk-gray);
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 600;
 }
 
 nav a:hover{
@@ -116,6 +123,11 @@ p{
 	/* add an indent on the first line of 2rem */
 	/* center those paragraphs (not the text) on the page */
 	padding: 0.5rem;
+
+	max-width: 55ch;
+	text-indent: 2rem;
+	margin: 0 auto;
+
 }
 
 a{
@@ -128,11 +140,15 @@ a:hover{
 
 dl, ol, main ul{
 	/* limit the width of these lists to 55 characters */
+	max-width: 55ch;
 	margin: 1rem auto;
 }
 
 dt{
 	/* make this font display in bold weight */
+	font-weight: bold;
+
+
 }
 
 dt::before{
